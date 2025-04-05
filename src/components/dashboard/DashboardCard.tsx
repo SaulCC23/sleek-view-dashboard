@@ -52,7 +52,7 @@ const DashboardCard: React.FC<DashboardCardProps> = ({
           variant="outline"
           className="w-full mt-2 transition-all duration-300 hover:bg-gray-50 group"
         >
-          ingresar 
+          ver más
           <ArrowRight className="ml-2 h-4 w-4 transition-all duration-300 group-hover:translate-x-1" />
         </Button>
       </div>

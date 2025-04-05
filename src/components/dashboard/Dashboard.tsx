@@ -1,6 +1,6 @@
 
 import React from "react";
-import { FileText, UserCircle, BarChart3, Settings } from "lucide-react";
+import { Car } from "lucide-react";
 import DashboardCard from "./DashboardCard";
 
 interface DashboardProps {
@@ -12,28 +12,28 @@ const Dashboard: React.FC<DashboardProps> = ({ className }) => {
     {
       title: "flotilla 1",
       description: "Visualiza informes y estadísticas detalladas de la flotilla 1",
-      icon: <FileText className="h-6 w-6 text-white" />, 
+      icon: <Car className="h-6 w-6 text-white" />, 
       color: "bg-blue-500",
       route: "/reports"
     },
     {
       title: "flotilla 2",
       description: "Visualiza informes y estadísticas detalladas de la flotilla 2", 
-      icon: <UserCircle className="h-6 w-6 text-white" />,
+      icon: <Car className="h-6 w-6 text-white" />,
       color: "bg-green-500",
       route: "/users"
     },
     {
       title: "flotilla 3",
       description: "Visualiza informes y estadísticas detalladas de la flotilla 3",
-      icon: <BarChart3 className="h-6 w-6 text-white" />,
+      icon: <Car className="h-6 w-6 text-white" />,
       color: "bg-purple-500",
       route: "/statistics"
     },
     {
       title: "flotilla 4",
       description: "Visualiza informes y estadísticas detalladas de la flotilla 4",
-      icon: <Settings className="h-6 w-6 text-white" />,
+      icon: <Car className="h-6 w-6 text-white" />,
       color: "bg-orange-500",
       route: "/settings"
     }

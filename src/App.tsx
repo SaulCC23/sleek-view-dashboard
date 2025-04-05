@@ -6,7 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import EmptyPage from "./pages/EmptyPage";
+import FlotillaDetail from "./pages/FlotillaDetail";
+import Login from "./pages/Login";
 
 const queryClient = new QueryClient();
 
@@ -17,11 +18,12 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route path="/" element={<Index />} />
-          <Route path="/reports" element={<EmptyPage title="flotilla 1" />} />
-          <Route path="/users" element={<EmptyPage title="flotilla 2" />} />
-          <Route path="/statistics" element={<EmptyPage title="flotilla 3" />} />
-          <Route path="/settings" element={<EmptyPage title="flotilla 4" />} />
+          <Route path="/reports" element={<FlotillaDetail title="Flotilla 1" />} />
+          <Route path="/users" element={<FlotillaDetail title="Flotilla 2" />} />
+          <Route path="/statistics" element={<FlotillaDetail title="Flotilla 3" />} />
+          <Route path="/settings" element={<FlotillaDetail title="Flotilla 4" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

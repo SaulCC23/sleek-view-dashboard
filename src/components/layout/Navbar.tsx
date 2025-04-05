@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ className }) => {
   const handleLogout = () => {
     // Aquí iría la lógica de cierre de sesión
     console.log("Cerrando sesión...");
-    navigate("/");
+    navigate("/login");
   };
   
   return (
