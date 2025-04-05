@@ -3,9 +3,6 @@ import React from "react";
 import {
   ToastProvider,
   ToastViewport,
-  Toast,
-  ToastTitle,
-  ToastDescription,
 } from "@/components/ui/toast";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
